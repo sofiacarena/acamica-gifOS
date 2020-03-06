@@ -1,0 +1,29 @@
+/* Variables css para los colores del Dark Theme */
+:root{
+    --background: #110038;
+    --letter-bar: #FFFFFF;
+    --gradient-1: #EE3EFE;
+    --gradient-2: #2E32FB;
+    --fill-1: #B4B4B4;
+    --fill-2: #CCCCCC;
+    --fill-3: #CCCCCC;
+    --fill-4: #2E32FB;
+    --fill-5: #CE36DB;
+    --fill-6: #2629CC;
+    --fill-7: #CCCCCC;
+    --fill-8: #110038;
+    --fill-9: #110038;
+    --border-1: #2E32FB;
+    --border-2: #808080;
+    --border-3: #33358F;
+    --border-4: #B4B4B4;
+    --shadow-1: #A72CB3;
+    --shadow-2: #8F8F8F;
+    --shadow-3: #110038;
+    --shadow-4: #5c5c5c;
+    --shadow-5: #2124B3;
+    --shadow-6: #B4B4B4;
+    --shadow-7: #E6DCE4;
+    --shadow-8: #5C5C5C;
+    --shadow-9: #FFF4FD; 
+}

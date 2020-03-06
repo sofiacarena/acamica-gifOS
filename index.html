@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gifOS</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/light-theme.css" title="light" id="light_theme">
+    <link rel="stylesheet" type="text/css" href="./styles/dark-theme.css" title="dark" id="dark_theme" disabled>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</header>
+    <main>
+        <section class="bar" id="bar">
+            <img src="./img/gifOF_logo.png" id="gifOS_logo" alt="Logo gifOS del tema light" onclick="location.reload()">
+            <nav>
+                <button class="bar_btn" id="guifos_btn">Crear Guifos</button>
+                <div class="dropdown" id="dropdown">
+                    <button class="bar_btn" id="theme_btn">Elegir tema</button>
+                    <button class="bar_btn" id="dropdown_btn"><img src="./img/dropdown.svg" alt="Ícono dropdown" id="dropdown_icon"></button>
+                    <div class="hidden" id="themes_btns">
+                        <button class="theme" id="light">Sailor Day</button>
+                        <button class="theme" id="dark">Sailor Night</button>
+                    </div>
+                </div>
+                <div id="mis_guifos_bar">
+                    <a href="misguifos.html">Mis Guifos</a>
+                </div>
+            </nav>
+        </section>
+        <section class="search" id="search"> 
+            <div class="search_container" id="search_container">
+                <h2 id="search_title">Buscar</h2>
+                <div>
+                    <input id="search_value" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    <button id="search_btn" class="search_btn_inactive"><img src="./img/lupa_inactive.svg" id="search_lupa" alt="Lupa inactiva">Buscar</button>
+                </div>
+            </div>
+            <div id="search_autocomplete" class="hidden"></div>
+            <div id="searched_container" class="hidden"></div>
+        </section>
+        <section class="suggestion" id="suggestion">
+            <h2 class="suggestion_title" id="suggestion_title">Hoy te sugerimos:</h2>
+            <div class="wrapper">
+                <div class="suggestion_gif">
+                    <div class="suggestion_gif_title">
+                        <h3 class="suggestion_tag"></h3>
+                        <button class="suggestion_close_btn"> <img src="./img/button3.svg" alt="Botón de cierre"> </button>
+                    </div>
+                    <div class="suggestion_gif_container">
+                        <button class="ver_mas_btn" onclick="window.location='#searched_title'">Ver más...</button>
+                    </div>         
+                </div>
+                <div class="suggestion_gif">
+                    <div class="suggestion_gif_title">
+                        <h3 class="suggestion_tag"></h3>
+                        <button class="suggestion_close_btn"><img src="./img/button3.svg" alt="Botón de cierre"></button class="suggestion_close_btn">
+                    </div>
+                    <div class="suggestion_gif_container">
+                        <button class="ver_mas_btn" onclick="window.location='#searched_title'">Ver más...</button>
+                    </div>
+                </div>
+                <div class="suggestion_gif">
+                    <div class="suggestion_gif_title">
+                        <h3 class="suggestion_tag"></h3>
+                        <button class="suggestion_close_btn"><img src="./img/button3.svg" alt="Botón de cierre"></button class="suggestion_close_btn">
+                    </div>
+                    <div class="suggestion_gif_container">
+                        <button class="ver_mas_btn" onclick="window.location='#searched_title'">Ver más...</button>
+                    </div>
+                </div>
+                <div class="suggestion_gif">
+                    <div class="suggestion_gif_title">
+                        <h3 class="suggestion_tag"></h3>
+                        <button class="suggestion_close_btn"><img src="./img/button3.svg" alt="Botón de cierre"></button class="suggestion_close_btn">
+                    </div>
+                    <div class="suggestion_gif_container">
+                        <button class="ver_mas_btn" onclick="window.location='#searched_title'">Ver más...</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trending" id="trending">
+            <h2 class="trending_title" id="trending_title">Tendencias:</h2>
+            <div class="grid_container" id="grid_container"></div>
+        </section>
+    </main>
+    <script src="./js/functions.js" type="text/javascript"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+</body>
+</html>

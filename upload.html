@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifOS</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/upload.css">
+    <link rel="stylesheet" type="text/css" href="./styles/light-theme.css" title="light" id="light_theme">
+    <link rel="stylesheet" type="text/css" href="./styles/dark-theme.css" title="dark" id="dark_theme" disabled>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</header>
+    <main>
+        <section class="bar" id="bar">
+            <div id="bar_logo">
+                <img src="./img/arrow.svg" id="arrow" alt="Flecha apuntando hacia la izquierda">
+                <img src="./img/gifOF_logo.png" id="gifOS_logo" alt="Logo gifOS del tema light"
+                    onclick="location.href = 'index.html'">
+            </div>
+            <nav class="hidden">
+                <button class="bar_btn" id="guifos_btn">Crear Guifos</button>
+                <div class="dropdown" id="dropdown">
+                    <button class="bar_btn" id="theme_btn">Elegir tema</button>
+                    <button class="bar_btn" id="dropdown_btn"><img src="./img/dropdown.svg" alt="Ícono dropdown"
+                            id="dropdown_icon"></button>
+                    <div class="hidden" id="themes_btns">
+                        <button class="theme" id="light">Sailor Day</button>
+                        <button class="theme" id="dark">Sailor Night</button>
+                    </div>
+                </div>
+                <div id="mis_guifos_bar">
+                    <a href="misguifos.html">Mis Guifos</a>
+                </div>
+            </nav>
+        </section>
+        <section id="create">
+            <div class="create_container" id="crear_guifos_container">
+                <div class="create_title_container">
+                    <h2 class="create_title">Crear Guifos</h2>
+                    <button class="create_btn_close"><img src="./img/button3.svg" alt="Botón de cierre"></button>
+                </div>
+                <div class="create_content">
+                    <img id='window' src="./img/windowimg.png" alt="Imagen ventana windows">
+                    <div id="create_text">
+                        <h3>Aquí podrás crear tus propios guifos</h3>
+                        <p>Crear tu <i><b>guifo</b></i> es muy fácil, graba cualquier imagen con tu cámara y obtén
+                            guifos<br> personalizados. Los pasos para crear tu
+                            guifo son: <br><br>
+                            <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br><br>
+                            <b>2)</b> Capturar tu momento guifo<br><br>
+                            <b>3)</b> Revisar el momento<br><br>
+                            <b>4)</b> Listo para subir y compartir!<br><br>
+                            ¿Quieres comenzar a crear tu <i><b>guifo</b></i> ahora?</p>
+                    </div>
+                </div>
+                <div class="create_btns">
+                    <button id="cancelar_btn">Cancelar</button>
+                    <button id="comenzar_btn">Comenzar</button>
+                </div>
+            </div>
+            <div class="create_container_2 hidden" id="chequeo_container">
+                <div class="create_title_container">
+                    <h2 class="create_title" id="chequeo_title">Un Chequeo Antes de Empezar</h2>
+                    <button class="create_btn_close"><img src="./img/button3.svg" alt="Botón de cierre"></button>
+                </div>
+                <div class="create_content_2">
+                    <video src=""></video>
+                </div>
+                <div class="create_btns_2" id="camera_capturar_btns">
+                    <button id="camera_btn"><img src="./img/camera.svg" alt="Imagen de una camara de fotos"></button>
+                    <button id="capturar_btn">Capturar</button>
+                </div>
+                <div class="create_btns_2 hidden" id="recording_listo_btns">
+                    <button id="recording_btn"><img src="./img/recording.svg" alt="Ícono grabando"></button>
+                    <button id="listo_btn">Listo</button>
+                </div>
+            </div>
+            <div class="create_container_2 hidden" id="vista_previa_container">
+                <div class="create_title_container">
+                    <h2 class="create_title">Vista Previa</h2>
+                    <button class="create_btn_close"><img src="./img/button3.svg" alt="Botón de cierre"></button>
+                </div>
+                <div class="create_content_2">
+                    <div id="preview_gif"></div>
+                </div>
+                <div class="create_btns_3">
+                    <button id="repetir_btn">Repetir Captura</button>
+                    <button id="subir_btn">Subir Guifo</button>
+                </div>
+            </div>
+            <div class="create_container_2 hidden" id="subiendo_container">
+                <div class="create_title_container">
+                    <h2 class="create_title">Subiendo Guifo</h2>
+                    <button class="create_btn_close"><img src="./img/button3.svg" alt="Botón de cierre"></button>
+                </div>
+                <div class="create_content_2" id="subiendo_guifo_content">
+                    <img src="./img/globe_img.png" alt="Imagen de un globo terráqueo">
+                    <p>Estamos subiendo tu guifo…</p>
+                </div>
+                <div class="create_btns_4">
+                    <button id="cancelar_upload_btn">Cancelar</button>
+                </div>
+            </div>
+            <div class="create_container hidden" id="subido_container">
+                <div class="create_title_container">
+                    <h2 class="create_title">Guifo Subido Con Éxito</h2>
+                    <button class="create_btn_close"><img src="./img/button3.svg" alt="Botón de cierre"></button>
+                </div>
+                <div class="create_content_4">
+                    <div class="create_content_3">
+                        <img id="view_uploaded_gif" src="" alt="Vista del gif subido">
+                    </div>
+                    <div id="exito_content">
+                        <h3>Guifo creado con éxito</h3>
+                        <button id="link_btn">Copiar Enlace Guifo</button> <br>
+                        <button id="download_btn">Descargar Guifo</button>
+                    </div>
+                </div>
+                <div class="create_btns_5">
+                    <button id="fin_btn">Listo</button>
+                </div>
+            </div>
+        </section>
+        <section id="misguifos">
+            <h2 id="misguifos_title">Mis guifos</h2>
+            <div id="uploaded_guifos_container" class="uploaded_guifos_container"></div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+    <script src="./js/functions.js" type="text/javascript"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+    <script src="./js/upload.js" type="text/javascript"></script>
+</body>
+
+</html>

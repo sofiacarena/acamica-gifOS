@@ -1,0 +1,29 @@
+/* Variables css para los colores del Light Theme */
+:root{
+    --background: #FFFFFF;
+    --letter-bar: #110038;
+    --gradient-1: #f7c9f3;
+    --gradient-2: #4180F6;
+    --fill-1: #E6E6E6;
+    --fill-2: #F0F0F0;
+    --fill-3: #FFF4FD;
+    --fill-4: #F0F0F0;
+    --fill-5: #E6BBE2;
+    --fill-6: #3A72DB;
+    --fill-7: #DBDBDB;
+    --fill-8: #F0E5EE;
+    --fill-9: #FFF4FD;
+    --border-1: #E6BBE2;
+    --border-2: #CCA6C9;
+    --border-3: #808080;
+    --border-4: #110038;
+    --shadow-1: #997D97;
+    --shadow-2: #B4B4B4;
+    --shadow-3: #80687D;
+    --shadow-4: #B4B4B4;
+    --shadow-5: #284f99;
+    --shadow-6: #E6DCE4;
+    --shadow-7: #B4B4B4;
+    --shadow-8: #997D97;
+    --shadow-9: #FFFFFF; 
+}
