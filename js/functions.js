@@ -137,7 +137,7 @@ function createResults(searchValue) {
 // fetch búsqueda gifs por id y ejecuta createGridWithGuifos, utitlizando los pararmetros de entrada 
 //y el array devuelto por la resolucion de la promesa
 function getSaveGifByIDAndGrid(x, y, id) {
-    const gifsId = fetch('http://api.giphy.com/v1/gifs?api_key=' + apiKey + '&ids=' + id)
+    const gifsId = fetch('https://api.giphy.com/v1/gifs?api_key=' + apiKey + '&ids=' + id)
         .then(response => {
             return response.json();
         })

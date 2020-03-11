@@ -16,7 +16,7 @@
 .create_container{
     background: var(--fill-1);
     box-shadow: inset -2px -2px 0 0 var(--shadow-2), inset 2px 2px 0 0 #FFFFFF;
-    width: fit-content;
+    width: 65%;
     margin: auto;
     padding: 3px 3px 36px 3px;
     margin-top: 7%;
@@ -25,7 +25,7 @@
 .create_container_2{
     background: var(--fill-1);
     box-shadow: inset -2px -2px 0 0 var(--shadow-2), inset 2px 2px 0 0 #FFFFFF;
-    width: min-content;
+    width: max-content;
     margin: auto;
     padding: 3px 3px 16px 3px;
     margin-top: 7%;
@@ -69,17 +69,25 @@
     background: #FFFFFF;
     border: 1px solid #979797;
     box-shadow: inset -2px -2px 0 0 var(--fill-1), inset 2px 2px 0 0 #000000;
-    width: 628px;
-    height: 356px;
+    min-width: 358px;
+    min-height: 294px;
     margin: 3px 17px 16px 11px;
 }
 .create_content_3{
     background: #FFFFFF;
     border: 1px solid #979797;
     box-shadow: inset -2px -2px 0 0 var(--fill-1), inset 2px 2px 0 0 #000000;
+    width: 628px;
+    height: 356px;
+    margin: 3px 17px 16px 11px;
+} 
+.create_content_4{
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 var(--fill-1), inset 2px 2px 0 0 #000000;
     padding: 3px 3px 3px 3px;
 }
-.create_content_4{
+.create_content_5{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

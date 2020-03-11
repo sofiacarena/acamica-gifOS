@@ -2,4 +2,4 @@
 let gifsIdsStorage = localStorage.getItem('gifs_id');
 // ejecución de getSaveGifByIDAndGrid que va a generar el grid 
 //donde se van a ver los gifs creados utilizando los ids guardados en localStorage
-getSaveGifByIDAndGrid('misguifos_container', 'misguifos', gifsIdsStorage);
+if (gifsIdsStorage) {getSaveGifByIDAndGrid('misguifos_container', 'misguifos', gifsIdsStorage)};

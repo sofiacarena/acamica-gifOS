@@ -84,7 +84,7 @@ themeMenu.addEventListener('click', () => {
 const searched = [];
 // Fetch de búsqueda
 async function getSearchResults(search) {
-    const found = await fetch('http://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + apiKey)
+    const found = await fetch('https://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + apiKey)
     const data = await found.json();
     return data;
 }
@@ -217,7 +217,7 @@ for (let i=0; i<4; i++){
     // posición seleccionada al azar dentro de randomTags
     let random = randomTags[getRandomNumber(randomTags)];
     async function getRandomGif() {
-        const resp = await fetch('http://api.giphy.com/v1/gifs/random?&api_key=' + apiKey + '&tag=' + random);
+        const resp = await fetch('https://api.giphy.com/v1/gifs/random?&api_key=' + apiKey + '&tag=' + random);
         const datos = await resp.json();
         return datos;
     }
@@ -236,7 +236,7 @@ for (let i=0; i<gifCloseBtns.length; i++){
     gifCloseBtns[i].addEventListener('click', () =>{
         let random = randomTags[getRandomNumber(randomTags)];
         async function getRandomGif() {
-            const resp = await fetch('http://api.giphy.com/v1/gifs/random?&api_key=' + apiKey + '&tag=' + random);
+            const resp = await fetch('https://api.giphy.com/v1/gifs/random?&api_key=' + apiKey + '&tag=' + random);
             const datos = await resp.json();
             return datos;
         }
@@ -260,7 +260,7 @@ for(let i = 0; i < verMasBtn.length; i++){
 // TRENDING SECTION
 // Fetch trending section, crea dinamicamente los divs en los que van los gif poniendolos como background image
 async function getTrendingGif() {
-    const resp = await fetch('http://api.giphy.com/v1/gifs/trending?&api_key=' + apiKey);
+    const resp = await fetch('https://api.giphy.com/v1/gifs/trending?&api_key=' + apiKey);
     const dt = await resp.json();
     return dt;
 }

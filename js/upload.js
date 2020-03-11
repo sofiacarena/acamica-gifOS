@@ -23,7 +23,7 @@ function getStreamAndRecord() {
                     console.log('started')
                 }
             });
-            // incio de captura de video click en capturar
+            // inicio de captura de video click en capturar
             document.getElementById('camera_capturar_btns').addEventListener('click', () => {
                 recorder.startRecording();
             });
@@ -127,6 +127,7 @@ document.getElementById('subir_btn').addEventListener('click', () => {
 });
 // click en Repetir Captura
 document.getElementById('repetir_btn').addEventListener('click', () => {
+    getStreamAndRecord();
     // oculta panel actual
     hiddenToggle('vista_previa_container');
     // vuelve al panel de chequeo
@@ -144,4 +145,4 @@ document.getElementById('fin_btn').addEventListener('click', () => {
 });
 // ejecución de getSaveGifByIDAndGrid que va a generar el grid 
 //donde se van a ver los gifs creados utilizando los ids guardados en localStorage
-getSaveGifByIDAndGrid('uploaded_guifos_container', 'uploaded', gifsIdsStorage);
+if (gifsIdsStorage){getSaveGifByIDAndGrid('uploaded_guifos_container', 'uploaded', gifsIdsStorage)};
