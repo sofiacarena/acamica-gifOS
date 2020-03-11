@@ -230,6 +230,9 @@ video, #preview_gif{
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 }
+#link_btn, #download_btn{
+    cursor: pointer;
+}
 #fin_btn{
     width: 144px;
     background: var(--gradient-1);
